@@ -7,10 +7,9 @@
  * Version: 1.2
  
  changelog:
- v1.1 - added the static variable "AnyButtonPushed"
- v1.2 - 14.12.2014: Bugfix: first call of "readout" delivers correct values now.
- v1.2 Arduino - 16.04.2023
-
+ v1.0.0 - added the static variable "AnyButtonPushed"
+ v1.0.1 - 14.12.2014: Bugfix: first call of "readout" delivers correct values now.
+ 
 Usage example:
 #include "buttons_arduino.h"
 
