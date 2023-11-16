@@ -1,9 +1,9 @@
 /*
- * buttons.cpp
+ * buttons_arduino.cpp
  *
  * Created: 08.02.2014 09:10:16
  *  Author: mankut
- * v1.2
+ * v1.0.1
  */ 
 
 #include <avr/io.h>
@@ -65,7 +65,6 @@ void pushbutton::Readout()
 	{
 		state = 0;
 		cyclecounter = 0;
-		//if (pushedlongmark == ) pushedlongmark = 0;
 	}
 	
 	if (cyclecounter == 0xFFFF) cyclecounter = 0xFFFE;
