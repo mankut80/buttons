@@ -19,7 +19,7 @@ int main(void)
 
 	while(1)
 	{
-		pushbutton::AnyButtonPushed = 0; //use only if needed
+		pushbutton::AnyButtonPushed = 0; //this line is no "must"
 		mybutton.Readout();  //this has to be done first
 		
 		if (mybutton.IsPushed) do something;
@@ -34,6 +34,8 @@ int main(void)
 
 Some more words:
 
+The variable pushbutton::AnyButtonPushed will switch to "true" (and stays true) if any of the memberbuttons are "touched" (in the case of having more than one button declared, this may be useful). 
+
 The init-method also sets the Pullup (if low-active).
 
 The method IsPushedLong() returns "true" for only one cycle.
@@ -46,3 +48,5 @@ when short pressed, save a value when long pressed)
 Because the timing for autorepeat, debounce and longpress is derived from
 the repeated calls of the method Readout(), maybe it's a good idea
 to use a timer or similar doing this job
+
+
